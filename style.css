@@ -36,6 +36,7 @@ p{
 
 li {
   display: inline;
+
 }
 ul {
   padding: 0;
@@ -52,11 +53,13 @@ ul {
   padding: 50px;
   background-color: #DCD8CE;
   margin-top: 20px;
+  transition: 0.4s ease transform, 0.4s ease box-shadow;
 }
 
 .card-grey:hover {
   /* color: #F1EFE9; */
   background-color: #E7E5DD;
+  transform: translateX(5px) translateY(-5px);
 }
 .abc {
   color: #282828;
@@ -64,6 +67,23 @@ ul {
 i{
   margin-left: 4px;
 }
+
+.fab {
+  transition: transform 0.3s ease-in;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+.fas {
+  transition: transform 0.3s ease-in;
+}
+
+.fas:hover {
+  transform: scale(1.1);
+}
+
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
